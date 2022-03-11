@@ -17,9 +17,9 @@ namespace Threading
     class FindPIThread
     {
 
-        int dartNum;
-        int dartHit;
-        Random numb;
+        public int dartNum;
+        public int dartHit;
+        public Random numb;
 
         public FindPIThread(int dart)
         {
@@ -48,9 +48,9 @@ namespace Threading
             }
         }
 
-        public void printHits()
+        public int printHits()
         {
-            Console.WriteLine(dartHit);
+            return dartHit;
 
         }
 
